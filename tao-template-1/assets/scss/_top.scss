@@ -1,0 +1,412 @@
+/**************************************
+home.scss
+***************************************/
+
+.home {
+    main {
+
+        .section01 {
+            margin: 0 auto;
+            width: 100%;
+            background-color: #00588d;
+
+            .section01__container {
+                margin: 0 auto;
+                width: 100%;
+
+                .our-story {
+                    margin: 0 auto;
+                    padding-top: 6rem;
+                    width: 100%;
+
+                    .our-story-flexContainer {
+                        display: flex;
+                        align-items: flex-start;
+
+                        .our-story-image {
+                            padding: 0 15px;
+                            box-sizing: border-box;
+
+                            &.third-image {
+                                padding-right: 2rem;
+                            }
+                        }
+
+                        .our-story-content {
+                            margin: 0 auto;
+                            width: 50%;
+                            display: block;
+
+                            &.third-item {
+                                margin-top: 0;
+                                padding-top: 0;
+                                padding: 1rem;
+                            }
+
+                            &.text-align-right {
+                                text-align: right;
+                                z-index: 333;
+                                padding: 1rem;
+                                margin-top: 1rem;
+                            }
+
+                            h2 {
+                                font-size: 3rem;
+                                font-weight: 600;
+                                font-family: 'matroregular';
+                                margin-bottom: 20px;
+                                color: $white;
+                                line-height: normal;
+                            }
+
+                            p {
+                                font-family: $nunito;
+                                color: $white;
+                                font-size: 1.1rem;
+                                margin: 0 0 10px;
+                                line-height: 1.6rem;
+
+                                &.strong {
+                                    font-weight: 700;
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                #map {
+                    margin-top: 4rem;
+                }
+
+                .map-container {
+                    padding: 4rem 0 5rem;
+                    z-index: 999;
+                    margin-right: -15px;
+                    margin-left: -15px;
+
+                    img {
+                        &.responsive-map {
+                            margin: 0 auto;
+                            padding: 0 50px 50px;
+                            max-width: 1440px;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        .section02 {
+            margin: 0 auto;
+            width: 100%;
+
+            .section02-container {
+                margin: 0 auto;
+                width: 100%;
+                display: block;
+                background-image: url(../img/section02/slider07.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
+
+                @media screen and (min-width: 1100px) {
+                    background-attachment: fixed;
+                }
+
+                .our-mission-flex-container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    .our-mission-content {
+                        position: relative;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        color: $white;
+                        padding-right: 3rem;
+                        text-align: right;
+                        flex: 1;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        align-content: flex-end;
+
+                        h2 {
+                            font-size: 3rem;
+                            font-weight: 600;
+                            font-family: 'matroregular';
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-family: $nunito;
+                            margin: 0 0 10px;
+                            font-size: 1.1rem;
+                        }
+
+
+                        .play-video {
+                            align-self: flex-end;
+
+                            a {
+                                transition: all 0.2s ease-in-out;
+                                border-radius: 3px;
+                                display: block;
+                                margin: 2rem auto 0;
+                                text-align: center;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                letter-spacing: 0.05rem;
+                                font-size: 1rem;
+                                width: 8rem;
+                                background: #fde000;
+                                color: #555;
+                                font-weight: 700;
+                                padding: 0.3rem 0.5rem 0.2rem;
+                                font-size: 0.9rem;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+
+                    .our-mission-image {
+                        position: relative;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        flex: 1;
+                    }
+                }
+            }
+        }
+
+        #video {
+            padding: 12rem 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+        .section03 {
+            margin: 0 auto;
+            width: 100%;
+
+            .section03-container {
+                margin: 0 auto;
+                width: 100%;
+                background-color: $white;
+
+                .choose-experience-container {
+                    margin: 0 auto;
+                    padding: 2rem;
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    .choose-experience-heading {
+                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+
+                        h2 {
+                            margin: 20px 0;
+                            font-size: 3rem;
+                            font-weight: 600;
+                            font-family: 'matroregular';
+                            color: #444;
+                            line-height: normal;
+                        }
+
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+
+
+                    .choose-experience-flexContainer {
+                        display: flex;
+                        align-items: flex-start;
+                        box-sizing: border-box;
+
+                        .choose-experience-item {
+                            padding: 0 1rem;
+                            width: 25%;
+                            box-sizing: border-box;
+
+                            .ce-thumbnail {
+                                width: 100%;
+                                margin-bottom: 0.5rem;
+                                margin-top: 3rem;
+                                height: auto;
+                            }
+
+                            .ce-details {
+                                p {
+                                    font-size: 1.1rem;
+                                    color: #444;
+                                    text-align: left;
+                                }
+
+                                h1 {
+                                    margin: 0;
+                                    font-size: 1.6rem;
+                                    font-weight: 600;
+                                    line-height: 2.2rem;
+                                    white-space: nowrap;
+                                }
+
+                                h2 {
+                                    font-size: 1.1rem;
+                                    margin: 0 0 10px;
+                                }
+                            }
+
+                            .apply-btn {
+                                a {
+                                    transition: all 0.2s ease-in-out;
+                                    border-radius: 3px;
+                                    display: block;
+                                    margin: 1rem 0 0 0;
+                                    text-align: center;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.05rem;
+                                    font-size: 1rem;
+                                    width: 8rem;
+                                    background: #fde000;
+                                    color: #555;
+                                    font-weight: 700;
+                                    padding: 0.3rem 0.5rem 0.2rem;
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+
+        .section04 {
+            margin: 0 auto;
+            width: 100%;
+
+            .section04-container {
+                margin: 0 auto;
+                width: 100%;
+                background: #005871;
+
+                .section04-content {
+                    padding: 5.5rem 15%;
+                    box-sizing: border-box;
+
+                    h2 {
+                        font-style: italic;
+                        color: #fff;
+                        display: block;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    img {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        max-width: 7rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+
+
+        .section05 {
+            margin: 0 auto;
+            width: 100%;
+
+            .section05-container {
+                margin: 0 auto;
+                width: 100%;
+
+                .section05-icons {
+                    display: flex;
+
+                    .image {
+                        margin: 0 auto;
+                        width: 20%;
+                        position: relative;
+                        border: 1px solid rgba(0, 0, 0, 0.03);
+                        transition: all 0.2s ease;
+
+                        &:hover {
+                            border: 1px solid rgba(253, 222, 0, 1);
+                        }
+
+                        a {
+                            padding: 4rem;
+                            display: block;
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            height: 2rem;
+
+                            img {
+                                margin: 0 auto;
+                                max-width: 8.5rem;
+                                height: auto;
+                                opacity: 0.9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+        .section06 {
+            margin: 0 auto;
+            width: 100%;
+
+            .section06-container {
+                margin: 0 auto;
+                width: 100%;
+                background-image: url(../img/section06/tao-bg.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-attachment: fixed;
+            }
+        }
+
+
+
+    }
+}
+
+
+
+/******************************
+    SP
+*******************************/
+
+@include media($mobileSize) {
+    .home {}
+}

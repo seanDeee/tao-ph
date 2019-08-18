@@ -1,0 +1,46 @@
+/**************************************
+
+common.scss
+
+***************************************/
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+
+
+/******************************
+    SP
+*******************************/
+
+@include media($mobileSize) {
+
+    html,
+    body {
+        min-width: auto;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+}
