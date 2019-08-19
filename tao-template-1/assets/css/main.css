@@ -52,7 +52,7 @@ html { color: #000; background-color: #fff; font-size: 16px; line-height: 1.2; l
 
 body { font-family: 'Nunito', sans-serif; font-weight: 300; line-height: 1.6rem; color: #555; background-color: #fff; }
 
-html, body { position: relative; min-width: 1200px; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+html, body { position: relative; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 
 a { text-decoration: none; color: #000; }
 
@@ -126,7 +126,7 @@ home.scss
 .home main .section01 .section01__container .our-story .our-story-flexContainer .our-story-content p.strong { font-weight: 700; font-size: 1.1rem; }
 .home main .section01 .section01__container #map { margin-top: 4rem; }
 .home main .section01 .section01__container .map-container { padding: 4rem 0 5rem; z-index: 999; margin-right: -15px; margin-left: -15px; }
-.home main .section01 .section01__container .map-container img.responsive-map { margin: 0 auto; padding: 0 50px 50px; max-width: 1440px; width: 100%; box-sizing: border-box; }
+.home main .section01 .section01__container .map-container img.responsive-map { margin: 0 auto; padding: 0 50px 50px; max-width: 1440px; width: 100%; display: block; box-sizing: border-box; }
 .home main .section02 { margin: 0 auto; width: 100%; }
 .home main .section02 .section02-container { margin: 0 auto; width: 100%; display: block; background-image: url(../img/section02/slider07.jpg); background-size: cover; background-repeat: no-repeat; background-position: top center; }
 @media screen and (min-width: 1100px) { .home main .section02 .section02-container { background-attachment: fixed; } }
@@ -164,7 +164,17 @@ home.scss
 .home main .section05 .section05-container .section05-icons .image a { padding: 4rem; display: block; text-align: center; margin: 0 auto; font-size: 1.3rem; font-weight: 400; height: 2rem; }
 .home main .section05 .section05-container .section05-icons .image a img { margin: 0 auto; max-width: 8.5rem; height: auto; opacity: 0.9; }
 .home main .section06 { margin: 0 auto; width: 100%; }
-.home main .section06 .section06-container { margin: 0 auto; width: 100%; background-image: url(../img/section06/tao-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: top center; background-attachment: fixed; }
+.home main .section06 .section06-container { margin: 0 auto; width: 100%; background-image: url(../img/section06/tao-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: top center; background-attachment: fixed; padding: 7rem 0; margin-right: 18rem; }
+.home main .section06 .section06-container .blue-bg-container { background: #6ec5d5; border-radius: 3px; display: inline-block; font-size: 1.6rem; font-weight: 400; max-width: 31rem; padding: 0.75rem 2rem 2rem 2rem; position: relative; text-align: center; box-sizing: border-box; }
+.home main .section06 .section06-container .blue-bg-container .playbutton { margin: 0 auto; position: absolute; bottom: -125px; left: 0; right: 0; width: 96px; }
+.home main .section06 .section06-container .blue-bg-container .playbutton img { color: #fedf00; font-size: 7rem; margin-top: 2rem; transition: all 0.5s ease 0s; -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+.home main .section06 .section06-container .blue-bg-container:after { content: ''; position: absolute; top: 100%; left: 50%; margin-left: -20px; width: 0; height: 0; border-top: 20px solid #6ec5d5; border-right: 20px solid transparent; border-left: 20px solid transparent; }
+.home main .section06 .section06-container .blue-bg-container .heading { margin: 0 auto; }
+.home main .section06 .section06-container .blue-bg-container .heading h2 { margin-top: 20px; margin-bottom: 20px; color: #075871; font-size: 3rem; font-weight: 600; font-family: 'matroregular'; line-height: 1.1; }
+.home main .section06 .section06-container .blue-bg-container .sub-heading { border-bottom: 1px dashed #075871; border-top: 1px dashed #075871; margin: 0.5rem 0 1rem; padding: 0.5rem 0; text-align: center; }
+.home main .section06 .section06-container .blue-bg-container .sub-heading h2 { font-size: 1rem; font-weight: 400; letter-spacing: 0.2rem; line-height: 1.2rem; color: #fedf00; }
+.home main .section06 .section06-container .blue-bg-container .details p { font-size: 1.1rem; margin: 0 0 10px; color: #075871; }
+.home main .section06 .section06-container .blue-bg-container .details a { font-size: 1.1rem; margin: 0 0 10px; color: #fedf00; }
 
 /****************************** SP
 *******************************/

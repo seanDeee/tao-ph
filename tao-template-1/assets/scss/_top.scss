@@ -92,6 +92,7 @@ home.scss
                             padding: 0 50px 50px;
                             max-width: 1440px;
                             width: 100%;
+                            display: block;
                             box-sizing: border-box;
                         }
                     }
@@ -393,6 +394,99 @@ home.scss
                 background-repeat: no-repeat;
                 background-position: top center;
                 background-attachment: fixed;
+                padding: 7rem 0;
+                margin-right: 18rem;
+
+                .blue-bg-container {
+                    background: #6ec5d5;
+                    border-radius: 3px;
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    max-width: 31rem;
+                    padding: 0.75rem 2rem 2rem 2rem;
+                    position: relative;
+                    text-align: center;
+                    box-sizing: border-box;
+
+                    .playbutton {
+                        margin: 0 auto;
+                        position: absolute;
+                        bottom: -125px;
+                        left: 0;
+                        right: 0;
+                        width: 96px;
+
+                        img {
+                            color: #fedf00;
+                            font-size: 7rem;
+                            margin-top: 2rem;
+                            transition: all 0.5s ease 0s;
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        margin-left: -20px;
+                        width: 0;
+                        height: 0;
+                        border-top: 20px solid #6ec5d5;
+                        border-right: 20px solid transparent;
+                        border-left: 20px solid transparent;
+                    }
+
+                    .heading {
+                        margin: 0 auto;
+
+                        h2 {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            color: #075871;
+                            font-size: 3rem;
+                            font-weight: 600;
+                            font-family: 'matroregular';
+                            line-height: 1.1;
+                        }
+                    }
+
+                    .sub-heading {
+                        border-bottom: 1px dashed #075871;
+                        border-top: 1px dashed #075871;
+                        margin: 0.5rem 0 1rem;
+                        padding: 0.5rem 0;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            letter-spacing: 0.2rem;
+                            line-height: 1.2rem;
+                            color: #fedf00;
+                        }
+                    }
+
+                    .details {
+                        p {
+                            font-size: 1.1rem;
+                            margin: 0 0 10px;
+                            color: #075871;
+                        }
+
+                        a {
+                            font-size: 1.1rem;
+                            margin: 0 0 10px;
+                            color: #fedf00;
+                        }
+                    }
+                }
             }
         }
 

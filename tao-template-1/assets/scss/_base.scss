@@ -148,7 +148,6 @@ body {
 html,
 body {
 	position: relative;
-	min-width: $pcSize;
 	@include renderText;
 }
 
