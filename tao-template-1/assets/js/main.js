@@ -25,7 +25,7 @@ function readMore() {
 
 $(function () {
     scroll();
-    readMore();
+//    readMore();
 });
 
 
