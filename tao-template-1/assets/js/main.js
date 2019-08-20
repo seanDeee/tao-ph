@@ -16,10 +16,9 @@ function scroll() {
 function readMore() {
     $(document).ready(function () {
         //onload check
-        if ($(".slick-slide").hasClass("slick-center")) {
-            $(this).find('.read-more').addClass('active');
+        if ($(".slick-slide").hasClass(".slick-center")) {
+            $(this).find('div .slide-item-container .read-more').addClass('active');
         } else {
-            $(this).find('.read-more').removeClass('active');
         }
     });
 }

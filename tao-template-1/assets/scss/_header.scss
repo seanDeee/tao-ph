@@ -13,6 +13,30 @@ header {
         .header-menu-container {
             margin: 0 auto;
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+            position: relative;
+
+            .facebook-header {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40px;
+                padding-bottom: 27px;
+                padding-top: 27px;
+                z-index: 10;
+
+                a {
+                    font-size: 1.6rem;
+                }
+
+                i {
+                    color: $white;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #3b5998;
+                    }
+                }
+            }
 
             .header-flex-container {
                 margin: 0 auto;
@@ -40,6 +64,11 @@ header {
                         letter-spacing: 0.05rem;
                         line-height: 20px;
                         box-sizing: border-box;
+
+                        @media screen and (max-width: 1000px) {
+                            font-size: 1rem;
+                            padding: 30px 10px 32px 10px;
+                        }
                     }
                 }
             }

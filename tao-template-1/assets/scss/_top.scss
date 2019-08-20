@@ -125,13 +125,34 @@ home.scss
                     align-items: flex-start;
                     justify-content: center;
 
+                    @media screen and (max-width: 991px) {
+                        align-items: center;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+
+                        .our-mission-content {
+                            margin-bottom: 30px;
+                            text-align: center !important;
+
+                            .inner-container {
+                                padding-right: 0 !important;
+                            }
+                        }
+
+                        .our-mission-image {
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            width: 94%;
+                            box-sizing: border-box;
+                        }
+                    }
+
                     .our-mission-content {
                         position: relative;
                         min-height: 1px;
                         padding-right: 15px;
                         padding-left: 15px;
                         color: $white;
-                        padding-right: 3rem;
                         text-align: right;
                         flex: 1;
                         display: flex;
@@ -139,11 +160,16 @@ home.scss
                         flex-direction: column;
                         align-content: flex-end;
 
+                        .inner-container {
+                            padding-right: 3rem;
+                        }
+
                         h2 {
                             font-size: 3rem;
                             font-weight: 600;
                             font-family: 'matroregular';
                             margin-bottom: 20px;
+                            line-height: 1;
                         }
 
                         p {
@@ -179,10 +205,16 @@ home.scss
 
                     .our-mission-image {
                         position: relative;
-                        min-height: 1px;
                         padding-right: 15px;
                         padding-left: 15px;
+                        min-height: 1px;
                         flex: 1;
+
+                        img {
+                            position: relative;
+                            display: block;
+                            border: 5px solid #fff;
+                        }
                     }
                 }
             }
@@ -234,12 +266,24 @@ home.scss
                     .choose-experience-flexContainer {
                         display: flex;
                         align-items: flex-start;
+                        justify-content: space-evenly;
                         box-sizing: border-box;
+                        flex-wrap: wrap;
 
                         .choose-experience-item {
+                            margin-left: -1rem;
+                            margin-right: -1rem;
                             padding: 0 1rem;
                             width: 25%;
                             box-sizing: border-box;
+
+                            @media (min-width: 1000px) and (max-width: 1270px) {
+                                width: 33.33333333%;
+                            }
+
+                            @media (max-width: 999px) {
+                                width: 100%;
+                            }
 
                             .ce-thumbnail {
                                 width: 100%;
@@ -249,10 +293,13 @@ home.scss
                             }
 
                             .ce-details {
+
                                 p {
                                     font-size: 1.1rem;
                                     color: #444;
                                     text-align: left;
+
+                                    &:last-child {}
                                 }
 
                                 h1 {
@@ -260,7 +307,7 @@ home.scss
                                     font-size: 1.6rem;
                                     font-weight: 600;
                                     line-height: 2.2rem;
-                                    white-space: nowrap;
+                                    word-break: break-word;
                                 }
 
                                 h2 {
@@ -344,13 +391,30 @@ home.scss
 
                 .section05-icons {
                     display: flex;
+                    flex-wrap: wrap;
 
                     .image {
                         margin: 0 auto;
                         width: 20%;
+                        flex: 19%;
                         position: relative;
                         border: 1px solid rgba(0, 0, 0, 0.03);
                         transition: all 0.2s ease;
+
+                        &:nth-child(n + 11) {
+                            display: none;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            width: 33.33%;
+                            flex: 1 0 25%;
+
+                            &:nth-child(n + 11) {
+                                display: block;
+                                opacity: 0;
+                                pointer-events: none;
+                            }
+                        }
 
                         &:hover {
                             border: 1px solid rgba(253, 222, 0, 1);
@@ -485,6 +549,16 @@ home.scss
                             -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
+
+                        &:hover {
+                            img {
+                                -moz-transform: rotate(120deg);
+                                -ms-transform: rotate(120deg);
+                                -o-transform: rotate(120deg);
+                                -webkit-transform: rotate(120deg);
+                                transform: rotate(120deg);
+                            }
+                        }
                     }
                 }
             }
@@ -555,6 +629,7 @@ home.scss
                                     bottom: 0;
                                     left: 0;
                                     width: 100%;
+                                    z-index: 1;
                                     content: "";
                                     transition: all 0.2s ease;
                                     height: 5rem;
@@ -809,6 +884,7 @@ home.scss
 
     }
 }
+
 
 
 

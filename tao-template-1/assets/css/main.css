@@ -51,6 +51,7 @@ html { color: #000; background-color: #fff; font-size: 16px; line-height: 1.2; l
 ::-webkit-scrollbar { display: none; }
 
 body { font-family: 'Nunito', sans-serif; font-weight: 300; line-height: 1.6rem; color: #555; background-color: #fff; }
+@media screen and (min-width: 400px) { body { overflow-x: hidden; } }
 
 html, body { position: relative; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 
@@ -88,9 +89,14 @@ common.scss
 ***************************************/
 header { margin: 0 auto; width: 100%; }
 header .header-container { margin: 0 auto; width: 100%; }
-header .header-container .header-menu-container { margin: 0 auto; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); }
+header .header-container .header-menu-container { margin: 0 auto; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); position: relative; }
+header .header-container .header-menu-container .facebook-header { position: absolute; top: 0; right: 0; width: 40px; padding-bottom: 27px; padding-top: 27px; z-index: 10; }
+header .header-container .header-menu-container .facebook-header a { font-size: 1.6rem; }
+header .header-container .header-menu-container .facebook-header i { color: #fff; transition: all 0.3s ease; }
+header .header-container .header-menu-container .facebook-header i:hover { color: #3b5998; }
 header .header-container .header-menu-container .header-flex-container { margin: 0 auto; width: 100%; position: fixed; top: 0; right: 0; left: 0; z-index: 1; display: flex; align-items: center; justify-content: center; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); }
 header .header-container .header-menu-container .header-flex-container li a { display: block; color: #fff; font-family: "Nunito", sans-serif; font-size: 1.1rem; font-weight: 500; padding-bottom: 32px; padding-top: 30px; padding: 30px 15px 32px 15px; letter-spacing: 0.05rem; line-height: 20px; box-sizing: border-box; }
+@media screen and (max-width: 1000px) { header .header-container .header-menu-container .header-flex-container li a { font-size: 1rem; padding: 30px 10px 32px 10px; } }
 header .header-container .video-container { position: relative; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); overflow-x: hidden; }
 header .header-container .video-container .video-heading { z-index: 9999; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
 header .header-container .video-container .video-heading .logo { display: block; margin: auto; max-width: 150px; margin-bottom: 1rem; }
@@ -131,12 +137,18 @@ home.scss
 .home main .section02 .section02-container { margin: 0 auto; width: 100%; display: block; background-image: url(../img/section02/slider07.jpg); background-size: cover; background-repeat: no-repeat; background-position: top center; }
 @media screen and (min-width: 1100px) { .home main .section02 .section02-container { background-attachment: fixed; } }
 .home main .section02 .section02-container .our-mission-flex-container { display: flex; align-items: flex-start; justify-content: center; }
-.home main .section02 .section02-container .our-mission-flex-container .our-mission-content { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; color: #fff; padding-right: 3rem; text-align: right; flex: 1; display: flex; flex-wrap: wrap; flex-direction: column; align-content: flex-end; }
-.home main .section02 .section02-container .our-mission-flex-container .our-mission-content h2 { font-size: 3rem; font-weight: 600; font-family: 'matroregular'; margin-bottom: 20px; }
+@media screen and (max-width: 991px) { .home main .section02 .section02-container .our-mission-flex-container { align-items: center; flex-wrap: wrap; flex-direction: column; }
+  .home main .section02 .section02-container .our-mission-flex-container .our-mission-content { margin-bottom: 30px; text-align: center !important; }
+  .home main .section02 .section02-container .our-mission-flex-container .our-mission-content .inner-container { padding-right: 0 !important; }
+  .home main .section02 .section02-container .our-mission-flex-container .our-mission-image { padding-right: 15px; padding-left: 15px; width: 94%; box-sizing: border-box; } }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-content { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; color: #fff; text-align: right; flex: 1; display: flex; flex-wrap: wrap; flex-direction: column; align-content: flex-end; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-content .inner-container { padding-right: 3rem; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-content h2 { font-size: 3rem; font-weight: 600; font-family: 'matroregular'; margin-bottom: 20px; line-height: 1; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content p { font-family: "Nunito", sans-serif; margin: 0 0 10px; font-size: 1.1rem; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video { align-self: flex-end; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video a { transition: all 0.2s ease-in-out; border-radius: 3px; display: block; margin: 2rem auto 0; text-align: center; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05rem; font-size: 1rem; width: 8rem; background: #fde000; color: #555; font-weight: 700; padding: 0.3rem 0.5rem 0.2rem; font-size: 0.9rem; box-sizing: border-box; }
-.home main .section02 .section02-container .our-mission-flex-container .our-mission-image { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 1; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-image { position: relative; padding-right: 15px; padding-left: 15px; min-height: 1px; flex: 1; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-image img { position: relative; display: block; border: 5px solid #fff; }
 .home main #video { padding: 12rem 0; box-sizing: border-box; }
 .home main .section03 { margin: 0 auto; width: 100%; }
 .home main .section03 .section03-container { margin: 0 auto; width: 100%; background-color: #fff; }
@@ -144,11 +156,13 @@ home.scss
 .home main .section03 .section03-container .choose-experience-container .choose-experience-heading { margin: 0 auto; width: 100%; text-align: center; }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-heading h2 { margin: 20px 0; font-size: 3rem; font-weight: 600; font-family: 'matroregular'; color: #444; line-height: normal; }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-heading p { font-size: 1.1rem; }
-.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer { display: flex; align-items: flex-start; box-sizing: border-box; }
-.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item { padding: 0 1rem; width: 25%; box-sizing: border-box; }
+.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer { display: flex; align-items: flex-start; justify-content: space-evenly; box-sizing: border-box; flex-wrap: wrap; }
+.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item { margin-left: -1rem; margin-right: -1rem; padding: 0 1rem; width: 25%; box-sizing: border-box; }
+@media (min-width: 1000px) and (max-width: 1270px) { .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item { width: 33.33333333%; } }
+@media (max-width: 999px) { .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item { width: 100%; } }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .ce-thumbnail { width: 100%; margin-bottom: 0.5rem; margin-top: 3rem; height: auto; }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .ce-details p { font-size: 1.1rem; color: #444; text-align: left; }
-.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .ce-details h1 { margin: 0; font-size: 1.6rem; font-weight: 600; line-height: 2.2rem; white-space: nowrap; }
+.home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .ce-details h1 { margin: 0; font-size: 1.6rem; font-weight: 600; line-height: 2.2rem; word-break: break-word; }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .ce-details h2 { font-size: 1.1rem; margin: 0 0 10px; }
 .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer .choose-experience-item .apply-btn a { transition: all 0.2s ease-in-out; border-radius: 3px; display: block; margin: 1rem 0 0 0; text-align: center; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05rem; font-size: 1rem; width: 8rem; background: #fde000; color: #555; font-weight: 700; padding: 0.3rem 0.5rem 0.2rem; font-size: 0.9rem; }
 .home main .section04 { margin: 0 auto; width: 100%; }
@@ -158,8 +172,11 @@ home.scss
 .home main .section04 .section04-container .section04-content img { margin: 0 auto; margin-top: 2rem; max-width: 7rem; display: block; }
 .home main .section05 { margin: 0 auto; width: 100%; }
 .home main .section05 .section05-container { margin: 0 auto; width: 100%; }
-.home main .section05 .section05-container .section05-icons { display: flex; }
-.home main .section05 .section05-container .section05-icons .image { margin: 0 auto; width: 20%; position: relative; border: 1px solid rgba(0, 0, 0, 0.03); transition: all 0.2s ease; }
+.home main .section05 .section05-container .section05-icons { display: flex; flex-wrap: wrap; }
+.home main .section05 .section05-container .section05-icons .image { margin: 0 auto; width: 20%; flex: 19%; position: relative; border: 1px solid rgba(0, 0, 0, 0.03); transition: all 0.2s ease; }
+.home main .section05 .section05-container .section05-icons .image:nth-child(n + 11) { display: none; }
+@media screen and (max-width: 991px) { .home main .section05 .section05-container .section05-icons .image { width: 33.33%; flex: 1 0 25%; }
+  .home main .section05 .section05-container .section05-icons .image:nth-child(n + 11) { display: block; opacity: 0; pointer-events: none; } }
 .home main .section05 .section05-container .section05-icons .image:hover { border: 1px solid #fdde00; }
 .home main .section05 .section05-container .section05-icons .image a { padding: 4rem; display: block; text-align: center; margin: 0 auto; font-size: 1.3rem; font-weight: 400; height: 2rem; }
 .home main .section05 .section05-container .section05-icons .image a img { margin: 0 auto; max-width: 8.5rem; height: auto; opacity: 0.9; }
@@ -176,6 +193,7 @@ home.scss
 .home main .section06 .section06-container .blue-bg-container .blue-bg .details a { font-size: 1.1rem; margin: 0 0 10px; color: #fedf00; }
 .home main .section06 .section06-container .blue-bg-container .playbutton { margin: 0 auto; width: 96px; }
 .home main .section06 .section06-container .blue-bg-container .playbutton img { color: #fedf00; font-size: 7rem; margin-top: 2rem; transition: all 0.5s ease 0s; -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+.home main .section06 .section06-container .blue-bg-container .playbutton:hover img { -moz-transform: rotate(120deg); -ms-transform: rotate(120deg); -o-transform: rotate(120deg); -webkit-transform: rotate(120deg); transform: rotate(120deg); }
 .home main .section07 { margin: 0 auto; width: 100%; }
 .home main .section07 .section07-container { margin: 0 auto; width: 100%; background: #6ec5d5; }
 .home main .section07 .section07-container .heading-text { margin: 0 auto; padding: 3rem 0; width: 50%; text-align: center; }
@@ -186,7 +204,7 @@ home.scss
 .home main .section08 .section08-container .center .slick-slide { background-color: #005872; border: 1px solid rgba(255, 255, 255, 0); transition: all 0.2s ease; }
 .home main .section08 .section08-container .center .slick-center { background-color: #6ec5d5 !important; }
 .home main .section08 .section08-container .center .slick-center .slide-item-container .main-content { position: relative; }
-.home main .section08 .section08-container .center .slick-center .slide-item-container .main-content:before { position: absolute; bottom: 0; left: 0; width: 100%; content: ""; transition: all 0.2s ease; height: 5rem; background: -moz-linear-gradient(top, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); background: -webkit-linear-gradient(top, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); background: linear-gradient(to bottom, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000a7ce', endColorstr='#00a7ce', GradientType=0); }
+.home main .section08 .section08-container .center .slick-center .slide-item-container .main-content:before { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 1; content: ""; transition: all 0.2s ease; height: 5rem; background: -moz-linear-gradient(top, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); background: -webkit-linear-gradient(top, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); background: linear-gradient(to bottom, rgba(110, 197, 213, 0) 0%, #6ec5d5 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000a7ce', endColorstr='#00a7ce', GradientType=0); }
 .home main .section08 .section08-container .center .slide-item-container { margin-top: 0; color: #fff; opacity: 1; transition: all 0.2s ease; text-align: center; }
 .home main .section08 .section08-container .center .slide-item-container .image-container { width: 100%; }
 .home main .section08 .section08-container .center .slide-item-container .title { margin: 0 auto; width: 100%; }
