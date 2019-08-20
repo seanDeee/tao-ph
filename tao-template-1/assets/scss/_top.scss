@@ -621,6 +621,9 @@ home.scss
                         background-color: #6ec5d5 !important;
 
                         .slide-item-container {
+                            .read-more{
+                                opacity: 1;
+                            }
                             .main-content {
                                 position: relative;
 
@@ -722,12 +725,8 @@ home.scss
                             color: #555;
                             border-radius: 3px;
                             width: 8rem;
-                            transition: all .5s ease;
+                            transition: all .2s ease;
                             opacity: 0;
-
-                            &.active {
-                                opacity: 1;
-                            }
 
                             a {
                                 bottom: 1rem;

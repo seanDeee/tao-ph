@@ -12,7 +12,6 @@ header {
 
         .header-menu-container {
             margin: 0 auto;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
             position: relative;
 
             .facebook-header {
@@ -41,15 +40,36 @@ header {
             .header-flex-container {
                 margin: 0 auto;
                 width: 100%;
+                max-width: 1170px;
                 position: fixed;
                 top: 0;
                 right: 0;
                 left: 0;
-                z-index: 1;
+                z-index: 2;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    right: -98px;
+                    width: 98px;
+                    height: 83px;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: -98px;
+                    width: 98px;
+                    height: 83px;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+                }
 
                 li {
                     a {
@@ -152,7 +172,7 @@ header {
                 position: relative;
                 width: 100vw;
                 height: 100vh;
-                z-index: -1;
+                z-index: 1;
 
                 video {
                     height: 100%;
@@ -168,11 +188,6 @@ header {
 
     }
 }
-
-
-/******************************
-    header sp
-*******************************/
 
 @include media($mobileSize) {
     header {}
