@@ -372,7 +372,7 @@ home.scss
   .home main .section03 { margin: 0 auto; width: 100%; }
   .home main .section03 .section03-container { margin: 0 auto; width: 100%; background-color: #fff; }
   .home main .section03 .section03-container .choose-experience-container { margin: 0 auto; padding: 2rem 0; width: 100%; box-sizing: border-box; }
-  .home main .section03 .section03-container .choose-experience-container .choose-experience-heading { margin: 0 auto; padding: 0 2rem; width: 100%; text-align: center; }
+  .home main .section03 .section03-container .choose-experience-container .choose-experience-heading { margin: 0 auto; padding: 0 1rem; width: 100%; text-align: center; box-sizing: border-box; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading h2 { margin: 20px 0; font-size: 2rem; font-weight: 600; font-family: 'matroregular'; color: #444; line-height: normal; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading p { font-size: 0.9rem; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-flexContainer { display: flex; align-items: flex-start; justify-content: space-evenly; box-sizing: border-box; flex-wrap: wrap; }
