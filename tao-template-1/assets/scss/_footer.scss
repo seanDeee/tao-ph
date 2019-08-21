@@ -46,6 +46,8 @@ footer {
                 .footer-block-item {
                     margin-bottom: 2rem;
                     width: 33.33%;
+                    pointer-events: none;
+                    cursor: default;
 
                     h2 {
                         margin-top: 10px;
@@ -55,11 +57,20 @@ footer {
                         font-weight: 500;
                         line-height: 1.1;
                         color: $white;
+
+                        i {
+                            opacity: 0;
+                        }
                     }
 
                     ul {
+                        pointer-events: none;
+                        cursor: default;
+
                         li {
                             a {
+                                pointer-events: all;
+                                cursor: pointer;
                                 list-style-type: none;
                                 color: #C9C9C9;
                                 transition: all 0.2s ease;
@@ -257,6 +268,8 @@ footer {
                         margin-bottom: 10px;
                         width: 100%;
                         text-align: center;
+                        pointer-events: all;
+                        cursor: pointer;
 
                         h2 {
                             margin-bottom: 10px;
@@ -267,6 +280,7 @@ footer {
                             color: $white;
 
                             i {
+                                opacity: 1;
                                 margin-left: 0.5rem;
                                 transition: all .2s ease;
 

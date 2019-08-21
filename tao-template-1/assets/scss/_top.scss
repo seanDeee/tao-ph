@@ -8,7 +8,7 @@ home.scss
         .section01 {
             margin: 0 auto;
             width: 100%;
-            background-color: #00588d;
+            background: #034152;
 
             .section01__container {
                 margin: 0 auto;
@@ -27,8 +27,9 @@ home.scss
                             padding: 0 15px;
                             box-sizing: border-box;
 
-                            &.third-image {
-                                padding-right: 2rem;
+                            &.first-image {
+                                width: 50%;
+                                padding-right: 4rem;
                             }
                         }
 
@@ -76,6 +77,57 @@ home.scss
                 }
 
 
+                #experience-icons {
+                    margin: 6rem auto 0;
+                    padding-bottom: 6rem;
+                    width: 100%;
+
+                    .icons {
+                        box-sizing: border-box;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 1 auto;
+                        flex: 0 1 auto;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        margin-right: -.5rem;
+                        margin-left: -.5rem;
+
+                        .icon {
+                            box-sizing: border-box;
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            padding-right: .5rem;
+                            padding-left: .5rem;
+                            -ms-flex-preferred-size: 20%;
+                            flex-basis: 20%;
+                            max-width: 20%;
+                            text-align: center;
+                            color: #fff;
+
+                            img {
+                                max-width: 7rem;
+                                margin: auto;
+                                margin-bottom: 1.5rem;
+                            }
+
+                            p {
+                                margin: 0 0 10px;
+                                font-size: 1.1rem;
+                                text-align: center;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
                 #map {
                     margin-top: 4rem;
                 }
@@ -122,14 +174,12 @@ home.scss
                 }
 
                 .our-mission-flex-container {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
+                    margin: 0 auto;
+                    width: 100%;
 
                     @media screen and (max-width: 991px) {
-                        align-items: center;
-                        flex-wrap: wrap;
-                        flex-direction: column;
+                        margin: 0 auto;
+                        width: 100%;
 
                         .our-mission-content {
                             margin-bottom: 30px;
@@ -153,16 +203,17 @@ home.scss
                         min-height: 1px;
                         padding-right: 15px;
                         padding-left: 15px;
-                        color: $white;
-                        text-align: right;
+                        color: #fff;
+                        text-align: center;
                         flex: 1;
                         display: flex;
                         flex-wrap: wrap;
                         flex-direction: column;
-                        align-content: flex-end;
+                        align-content: center;
 
                         .inner-container {
-                            padding-right: 3rem;
+                            width: 100%;
+                            padding-right: 0;
                         }
 
                         h2 {
@@ -181,14 +232,12 @@ home.scss
 
 
                         .play-video {
-                            align-self: flex-end;
-                            float: right;
 
                             a {
                                 transition: all 0.2s ease-in-out;
                                 border-radius: 3px;
                                 display: block;
-                                margin: 2rem 0 0 0;
+                                margin: 2rem auto 0;
                                 text-align: center;
                                 font-weight: 400;
                                 text-transform: uppercase;
@@ -236,6 +285,7 @@ home.scss
 
             .section03-container {
                 margin: 0 auto;
+                padding-bottom: 6rem;
                 width: 100%;
                 background-color: $white;
 
@@ -901,7 +951,6 @@ home.scss
             .section01 {
                 margin: 0 auto;
                 width: 100%;
-                background-color: #00588d;
 
                 .section01__container {
                     margin: 0 auto;
@@ -973,6 +1022,62 @@ home.scss
                             padding-top: 1rem;
                             padding-bottom: 10px;
                             width: 100%;
+                        }
+                    }
+
+
+
+
+                    #experience-icons {
+                        margin: 6rem auto 0;
+                        padding-bottom: 3rem;
+                        width: 100%;
+
+                        .icons {
+                            box-sizing: border-box;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 1 auto;
+                            flex: 0 1 auto;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            margin-right: -.5rem;
+                            margin-left: -.5rem;
+                            justify-content: center;
+
+                            .icon {
+                                box-sizing: border-box;
+                                -webkit-box-flex: 0;
+                                -ms-flex: 0 0 auto;
+                                flex: 0 0 auto;
+                                padding-right: .5rem;
+                                padding-left: .5rem;
+                                -ms-flex-preferred-size: 20%;
+                                flex-basis: 50%;
+                                max-width: 100%;
+                                text-align: center;
+                                color: #fff;
+                                margin-bottom: 2rem;
+
+                                img {
+                                    max-width: 7rem;
+                                    margin: auto;
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                p {
+                                    margin: 0 0 10px;
+                                    font-size: 1.1rem;
+                                    text-align: center;
+                                    color: $white;
+                                }
+                            }
                         }
                     }
 
@@ -1311,11 +1416,12 @@ home.scss
                 .section06-container {
                     margin: 0 auto;
                     width: 100%;
-                    background-image: url(../img/section06/tao-bg.jpg);
+                    background-image: none;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: top center;
                     background-attachment: fixed;
+                    background: #034152;
 
                     .blue-bg-container {
                         padding: 3rem 0;
