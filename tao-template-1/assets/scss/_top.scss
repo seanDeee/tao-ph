@@ -181,12 +181,13 @@ home.scss
 
                         .play-video {
                             align-self: flex-end;
+                            float: right;
 
                             a {
                                 transition: all 0.2s ease-in-out;
                                 border-radius: 3px;
                                 display: block;
-                                margin: 2rem auto 0;
+                                margin: 2rem 0 0 0;
                                 text-align: center;
                                 font-weight: 400;
                                 text-transform: uppercase;

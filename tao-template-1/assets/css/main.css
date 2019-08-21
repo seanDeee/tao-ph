@@ -88,17 +88,28 @@ common.scss
 	header
 ***************************************/
 header { margin: 0 auto; width: 100%; }
-header .header-container { margin: 0 auto; width: 100%; }
-header .header-container .header-menu-container { margin: 0 auto; position: relative; }
+header .header-container { margin: 0 auto; width: 100%; background: #00588d; }
+header .header-container .header-menu-container { margin: 0 auto; padding-left: 90px; box-sizing: border-box; position: relative; }
 header .header-container .header-menu-container .facebook-header { position: absolute; top: 0; right: 0; width: 40px; padding-bottom: 27px; padding-top: 27px; z-index: 10; }
 header .header-container .header-menu-container .facebook-header a { font-size: 1.6rem; }
 header .header-container .header-menu-container .facebook-header i { color: #fff; transition: all 0.3s ease; }
 header .header-container .header-menu-container .facebook-header i:hover { color: #3b5998; }
-header .header-container .header-menu-container .header-flex-container { margin: 0 auto; width: 100%; max-width: 1170px; position: fixed; top: 0; right: 0; left: 0; z-index: 2; display: flex; align-items: center; justify-content: center; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); }
-header .header-container .header-menu-container .header-flex-container:before { content: ''; position: absolute; top: 0px; right: -98px; width: 98px; height: 83px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); }
-header .header-container .header-menu-container .header-flex-container:after { content: ''; position: absolute; top: 0px; left: -98px; width: 98px; height: 83px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); }
-header .header-container .header-menu-container .header-flex-container li a { display: block; color: #fff; font-family: "Nunito", sans-serif; font-size: 1.1rem; font-weight: 500; padding-bottom: 32px; padding-top: 30px; padding: 30px 15px 32px 15px; letter-spacing: 0.05rem; line-height: 20px; box-sizing: border-box; }
+header .header-container .header-menu-container .header-flex-container { margin: 0 auto; width: 100%; max-width: 1170px; z-index: 2; display: flex; align-items: center; justify-content: center; }
+header .header-container .header-menu-container .header-flex-container li a { display: block; color: #fff; font-family: "Nunito", sans-serif; font-size: .8rem; font-weight: 900; padding-bottom: 32px; padding-top: 30px; padding: 30px 15px 32px 15px; letter-spacing: 0.05rem; line-height: 20px; box-sizing: border-box; }
 @media screen and (max-width: 1000px) { header .header-container .header-menu-container .header-flex-container li a { font-size: 1rem; padding: 30px 10px 32px 10px; } }
+header .header-container .header-bottom-menu { margin: 0 auto; background: #fff; width: 100%; }
+header .header-container .header-bottom-menu .header-bottom-menu-container { width: 95%; max-width: 1247px; min-height: 61px; margin: 0 auto; text-align: center; position: relative; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container { padding: 10px 0px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .logo { flex: 1; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .logo a { display: block; width: 100px; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .nav-menu { margin-right: 30px; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .nav-menu .flex-container { display: flex; justify-content: center; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .nav-menu .flex-container li { box-sizing: border-box; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .nav-menu .flex-container li a { margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; align-items: center; font-size: .8rem; font-weight: 700; text-transform: uppercase; color: #323543; line-height: 25.2px; letter-spacing: 2.52px; text-align: center; box-sizing: border-box; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .nav-menu .flex-container li a img { margin-bottom: 15px; width: 50px; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .searchbar { width: 25%; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .searchbar input { width: 100%; height: 61px; padding: 0 75px 0 22px; border: 1px solid #d2d2d2; background-color: #fff; font-family: 'Avenir LT Std', Arial, Helvetica, sans-serif; font-size: 1.0625em; font-weight: 300; line-height: 25.5px; box-sizing: border-box; }
+header .header-container .header-bottom-menu .header-bottom-menu-container .header-bottom-menu-flex-container .searchbar .searchicon { width: 74px; height: 59px; background-repeat: no-repeat; background-image: url(../img/search_icon_grey.svg); background-size: 19px 19px; background-position: center; cursor: pointer; position: relative; margin: -60px 1px 0; float: right; background-color: #fff; }
 header .header-container .video-container { position: relative; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); overflow-x: hidden; }
 header .header-container .video-container .video-heading { z-index: 9999; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
 header .header-container .video-container .video-heading .logo { display: block; margin: auto; max-width: 150px; margin-bottom: 1rem; }
@@ -113,6 +124,12 @@ header .header-container .video-container .video-inner-container video { height:
 /**************************************
 footer
 ***************************************/
+footer { margin: 0 auto; width: 100%; background: #005872; position: relative; padding: 30px 0 0; box-sizing: border-box; }
+footer .footer-container { margin: 2rem auto; padding: 0 11rem !important; width: 100%; box-sizing: border-box; }
+footer .footer-container .footer-heading { margin-bottom: 5rem; text-align: center; width: 100%; }
+footer .footer-container .footer-heading h2 { font-size: 3rem; font-weight: 600; font-family: 'matroregular'; margin: 20px 0; color: #fff; line-height: normal; }
+footer .footer-container .footer-heading p { color: #fff; }
+
 /****************************** footer sp
 *******************************/
 /**************************************
@@ -145,8 +162,8 @@ home.scss
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content .inner-container { padding-right: 3rem; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content h2 { font-size: 3rem; font-weight: 600; font-family: 'matroregular'; margin-bottom: 20px; line-height: 1; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-content p { font-family: "Nunito", sans-serif; margin: 0 0 10px; font-size: 1.1rem; }
-.home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video { align-self: flex-end; }
-.home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video a { transition: all 0.2s ease-in-out; border-radius: 3px; display: block; margin: 2rem auto 0; text-align: center; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05rem; font-size: 1rem; width: 8rem; background: #fde000; color: #555; font-weight: 700; padding: 0.3rem 0.5rem 0.2rem; font-size: 0.9rem; box-sizing: border-box; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video { align-self: flex-end; float: right; }
+.home main .section02 .section02-container .our-mission-flex-container .our-mission-content .play-video a { transition: all 0.2s ease-in-out; border-radius: 3px; display: block; margin: 2rem 0 0 0; text-align: center; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05rem; font-size: 1rem; width: 8rem; background: #fde000; color: #555; font-weight: 700; padding: 0.3rem 0.5rem 0.2rem; font-size: 0.9rem; box-sizing: border-box; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-image { position: relative; padding-right: 15px; padding-left: 15px; min-height: 1px; flex: 1; }
 .home main .section02 .section02-container .our-mission-flex-container .our-mission-image img { position: relative; display: block; border: 5px solid #fff; }
 .home main #video { padding: 12rem 0; box-sizing: border-box; }

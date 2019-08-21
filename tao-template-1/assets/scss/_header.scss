@@ -9,9 +9,12 @@ header {
     .header-container {
         margin: 0 auto;
         width: 100%;
+        background: #00588d;
 
         .header-menu-container {
             margin: 0 auto;
+            padding-left: 90px;
+            box-sizing: border-box;
             position: relative;
 
             .facebook-header {
@@ -41,43 +44,19 @@ header {
                 margin: 0 auto;
                 width: 100%;
                 max-width: 1170px;
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
                 z-index: 2;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    right: -98px;
-                    width: 98px;
-                    height: 83px;
-                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-                }
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    top: 0px;
-                    left: -98px;
-                    width: 98px;
-                    height: 83px;
-                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-                }
 
                 li {
                     a {
                         display: block;
                         color: #fff;
                         font-family: $nunito;
-                        font-size: 1.1rem;
-                        font-weight: 500;
+                        //                        font-family: 'Avenir LT Std', Arial, Helvetica, sans-serif;
+                        font-size: .8rem;
+                        font-weight: 900;
                         padding-bottom: 32px;
                         padding-top: 30px;
                         padding: 30px 15px 32px 15px;
@@ -93,6 +72,109 @@ header {
                 }
             }
         }
+
+
+        .header-bottom-menu {
+            margin: 0 auto;
+            background: $white;
+            width: 100%;
+
+            .header-bottom-menu-container {
+                width: 95%;
+                max-width: 1247px;
+                min-height: 61px;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
+
+                .header-bottom-menu-flex-container {
+                    padding: 10px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    .logo {
+                        flex: 1;
+
+                        //                        margin: 39px 0 0 0;
+                        a {
+                            display: block;
+                            width: 100px;
+                        }
+                    }
+
+                    .nav-menu {
+                        margin-right: 30px;
+                        //                        width: 100%;
+
+                        .flex-container {
+                            display: flex;
+                            justify-content: center;
+
+                            li {
+                                box-sizing: border-box;
+
+                                a {
+                                    margin: 0 auto;
+                                    padding: 0 20px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: .8rem;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    color: #323543;
+                                    line-height: 25.2px;
+                                    letter-spacing: 2.52px;
+                                    text-align: center;
+                                    box-sizing: border-box;
+
+                                    img {
+                                        margin-bottom: 15px;
+                                        width: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .searchbar {
+                        width: 25%;
+
+                        input {
+                            width: 100%;
+                            height: 61px;
+                            padding: 0 75px 0 22px;
+                            border: 1px solid #d2d2d2;
+                            background-color: #fff;
+                            font-family: 'Avenir LT Std', Arial, Helvetica, sans-serif;
+                            font-size: 1.0625em;
+                            font-weight: 300;
+                            line-height: 25.5px;
+                            box-sizing: border-box;
+                        }
+
+                        .searchicon {
+                            width: 74px;
+                            height: 59px;
+                            background-repeat: no-repeat;
+                            background-image: url(../img/search_icon_grey.svg);
+                            background-size: 19px 19px;
+                            background-position: center;
+                            cursor: pointer;
+                            position: relative;
+                            margin: -60px 1px 0;
+                            float: right;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
 
         .video-container {
             position: relative;
