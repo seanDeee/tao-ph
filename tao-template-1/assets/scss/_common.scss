@@ -31,6 +31,79 @@ common.scss
 
 @include media($mobileSize) {
 
+
+
+    /* 
+========================================== 
+This is a Menu Bars CSS
+========================================== 
+*/
+    .bars {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .bar {
+        margin: 7px auto;
+        width: 35px;
+        height: 3px;
+        display: block;
+        background: #1ba4ba;
+    }
+
+    .bars {
+        margin: 0 auto;
+        width: auto;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -ms-transition: all .7s ease;
+        -o-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    .menu-bar {
+        width: 15%;
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        position: relative;
+        background: #fff;
+    }
+
+    .middle {
+        margin: 0 auto;
+    }
+
+    .bar {
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -ms-transition: all .7s ease;
+        -o-transition: all .7s ease;
+        transition: all .7s ease;
+    }
+
+    .bars-clicked .top {
+        -webkit-transform: translateY(9px) rotateZ(45deg);
+        -moz-transform: translateY(9px) rotateZ(45deg);
+        -ms-transform: translateY(9px) rotateZ(45deg);
+        -o-transform: translateY(9px) rotateZ(45deg);
+        transform: translateY(9px) rotateZ(45deg);
+    }
+
+    .bars-clicked .bottom {
+        -webkit-transform: translateY(-11px) rotateZ(-45deg);
+        -moz-transform: translateY(-11px) rotateZ(-45deg);
+        -ms-transform: translateY(-11px) rotateZ(-45deg);
+        -o-transform: translateY(-11px) rotateZ(-45deg);
+        transform: translateY(-11px) rotateZ(-45deg);
+    }
+
+    .bars-clicked .middle {
+        width: 0;
+    }
+
+
+
     html,
     body {
         min-width: auto;
