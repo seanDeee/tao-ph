@@ -33,13 +33,27 @@ function readMore() {
 jQuery(document).ready(function ($) {
     $(".menu-bar").on('click', function () {
         $(".bars").toggleClass("bars-clicked");
-        //        $("#header__menu").slideToggle(400);
+        $("#header__menu").slideToggle(400);
     });
 });
 
 
+
+
+function openFooterBlock() {
+    jQuery(document).ready(function ($) {
+        $(".footer-block-item").on('click', function () {
+            $(this).find('ul').slideToggle().toggleClass('opened');
+            $(this).find('i').toggleClass('opened');
+        });
+    });
+}
+
+
+
 $(function () {
     scroll();
+    openFooterBlock();
     //    readMore();
 });
 
