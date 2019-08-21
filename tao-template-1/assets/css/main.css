@@ -371,7 +371,7 @@ home.scss
   .home main #video { padding: 3rem 0; box-sizing: border-box; }
   .home main .section03 { margin: 0 auto; width: 100%; }
   .home main .section03 .section03-container { margin: 0 auto; width: 100%; background-color: #fff; }
-  .home main .section03 .section03-container .choose-experience-container { margin: 0 auto; padding: 0; width: 100%; box-sizing: border-box; }
+  .home main .section03 .section03-container .choose-experience-container { margin: 0 auto; padding: 2rem 0; width: 100%; box-sizing: border-box; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading { margin: 0 auto; width: 100%; text-align: center; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading h2 { margin: 20px 0; font-size: 2rem; font-weight: 600; font-family: 'matroregular'; color: #444; line-height: normal; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading p { font-size: 0.9rem; }
