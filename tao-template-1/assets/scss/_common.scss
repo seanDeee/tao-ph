@@ -68,7 +68,7 @@ This is a Menu Bars CSS
         text-align: center;
         height: auto;
         position: relative;
-        background: #fff;
+        z-index: 999;
     }
 
     .middle {

@@ -81,7 +81,8 @@ home.scss
                 }
 
                 .map-container {
-                    padding: 4rem 0 5rem;
+                    margin-top: 4rem;
+                    padding: 0 0 5rem;
                     z-index: 999;
                     margin-right: -15px;
                     margin-left: -15px;
@@ -1149,7 +1150,8 @@ home.scss
                             margin: 0 auto;
                             padding: 0 1rem;
                             width: 100%;
-                            text-align: center;box-sizing: border-box;
+                            text-align: center;
+                            box-sizing: border-box;
 
                             h2 {
                                 margin: 20px 0;

@@ -111,13 +111,26 @@ footer {
 
                     a {
                         color: $white;
+                        transition: all .2s ease;
 
-                        &.imprint {
+                        &:hover {
                             color: #c9c9c9;
-                            transition: all .2s ease;
 
-                            &:hover {
+                            &.yellow {
                                 color: #fedf00;
+                                transition: all .2s ease;
+                            }
+
+                            &.facebook {
+                                color: #3b5998;
+                            }
+
+                            &.twitter {
+                                color: #2ac6f7;
+                            }
+
+                            &.googleplus {
+                                color: #d84b37;
                             }
                         }
                     }
@@ -241,20 +254,31 @@ footer {
                     flex-wrap: wrap;
 
                     .footer-block-item {
-                        margin-bottom: 2rem;
+                        margin-bottom: 10px;
                         width: 100%;
+                        text-align: center;
 
                         h2 {
-                            margin-top: 10px;
                             margin-bottom: 10px;
                             font-size: 18px;
                             font-family: inherit;
                             font-weight: 500;
                             line-height: 1.1;
                             color: $white;
+
+                            i {
+                                margin-left: 0.5rem;
+                                transition: all .2s ease;
+
+                                &.opened {
+                                    transform: rotate(180deg);
+                                }
+                            }
                         }
 
                         ul {
+                            display: none;
+
                             li {
                                 a {
                                     list-style-type: none;
