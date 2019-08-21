@@ -89,7 +89,7 @@ This is a Menu Bars CSS
   .bars { cursor: pointer; display: inline-block; }
   .bar { margin: 7px auto; width: 35px; height: 3px; display: block; background: #1ba4ba; }
   .bars { margin: 0 auto; width: auto; -webkit-transition: all .7s ease; -moz-transition: all .7s ease; -ms-transition: all .7s ease; -o-transition: all .7s ease; transition: all .7s ease; }
-  .menu-bar { width: 15%; display: inline-block; text-align: center; height: auto; position: relative; background: #fff; }
+  .menu-bar { margin-right: 10px; width: 15%; display: inline-block; text-align: center; height: auto; position: relative; background: #fff; }
   .middle { margin: 0 auto; }
   .bar { -webkit-transition: all .7s ease; -moz-transition: all .7s ease; -ms-transition: all .7s ease; -o-transition: all .7s ease; transition: all .7s ease; }
   .bars-clicked .top { -webkit-transform: translateY(9px) rotateZ(45deg); -moz-transform: translateY(9px) rotateZ(45deg); -ms-transform: translateY(9px) rotateZ(45deg); -o-transform: translateY(9px) rotateZ(45deg); transform: translateY(9px) rotateZ(45deg); }
@@ -371,7 +371,7 @@ home.scss
   .home main #video { padding: 3rem 0; box-sizing: border-box; }
   .home main .section03 { margin: 0 auto; width: 100%; }
   .home main .section03 .section03-container { margin: 0 auto; width: 100%; background-color: #fff; }
-  .home main .section03 .section03-container .choose-experience-container { margin: 0 auto; padding: 2rem; width: 100%; box-sizing: border-box; }
+  .home main .section03 .section03-container .choose-experience-container { margin: 0 auto; padding: 0; width: 100%; box-sizing: border-box; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading { margin: 0 auto; width: 100%; text-align: center; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading h2 { margin: 20px 0; font-size: 2rem; font-weight: 600; font-family: 'matroregular'; color: #444; line-height: normal; }
   .home main .section03 .section03-container .choose-experience-container .choose-experience-heading p { font-size: 0.9rem; }
