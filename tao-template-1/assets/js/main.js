@@ -18,14 +18,29 @@ function readMore() {
         //onload check
         if ($(".slick-slide").hasClass(".slick-center")) {
             $(this).find('div .slide-item-container .read-more').addClass('active');
-        } else {
-        }
+        } else {}
     });
 }
 
+
+
+
+/*
+================================
+//Mobile Nav Menu Script
+================================
+*/
+jQuery(document).ready(function ($) {
+    $(".menu-bar").on('click', function () {
+        $(".bars").toggleClass("bars-clicked");
+        //        $("#header__menu").slideToggle(400);
+    });
+});
+
+
 $(function () {
     scroll();
-//    readMore();
+    //    readMore();
 });
 
 
